@@ -5,7 +5,6 @@ namespace MadLibs.Controllers
 {
   public class HomeController : Controller
   {
-    public string Welcome() { return "Welcome to the MadLibs generator."; }
     [Route("/")]
     public ActionResult SteppingIntoTomorrow() 
     { 
