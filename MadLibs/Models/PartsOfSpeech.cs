@@ -6,5 +6,6 @@ namespace MadLibs.Models
     public string Noun { get; set; }
     public string Verb { get; set; }
     public string AdjectiveTwo { get; set; }
+    public string NounTwo { get; set; }
   }
 }

@@ -14,17 +14,19 @@ namespace MadLibs.Controllers
       partsOfSpeech.Noun = "people";
       partsOfSpeech.Verb = "let";
       partsOfSpeech.AdjectiveTwo = "prior";
+      partsOfSpeech.NounTwo = "invasion";
       return View(partsOfSpeech); }
     [Route("/form")]
     public ActionResult Form() { return View(); }
     [Route("/madlibs")]
-    public ActionResult MadLibs(string adjective, string noun, string verb, string adjectiveTwo)
+    public ActionResult MadLibs(string adjective, string noun, string verb, string adjectiveTwo, string nounTwo)
     {
       PartsOfSpeech partsOfSpeech = new PartsOfSpeech();
       partsOfSpeech.Adjective = adjective;
       partsOfSpeech.Noun = noun;
       partsOfSpeech.Verb = verb;
       partsOfSpeech.AdjectiveTwo = adjectiveTwo;
+      partsOfSpeech.NounTwo = nounTwo;
       return View(partsOfSpeech);
     }
   }
